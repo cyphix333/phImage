@@ -2,7 +2,7 @@
  * phImage - jQuery Plugin
  * Allows simple creation of using images for placeholders in text fields / textareas
  *
- * Documentation and examples can be found within the files you downloaded or at: https://github.com/cyphix333/phImage
+ * Documentation can be found within the files you downloaded or at: https://github.com/cyphix333/phImage
  *
  * Copyright (c) 2015 Brett Marks (ai3 [at] internode.net.au)
  *
