@@ -1,0 +1,67 @@
+/* Setup */
+
+h5 {
+	font-weight: bold;
+}
+
+.container-fluid .example:not(:first-child) {
+	margin-top: 40px;
+}
+
+.example .holder {
+	margin-top: 35px;
+}
+
+.example .code pre {
+    background-color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    color: inherit;
+    padding: inherit;
+	display: inherit;
+}
+
+input[type=text],
+input[type=email]
+{
+	display: block;
+	width: 400px;
+	height: 30px;
+	margin-bottom: 17px;
+	padding: 0 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+textarea {
+	display: block;
+	width: 400px;
+	height: 150px;
+	padding: 0 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;	
+}
+
+.explain {
+	margin-top: 15px;
+	font-size: 13px;
+}
+
+/* Fields */
+
+.tb-name,
+.tb-email,
+.tb-phone
+{
+	background-position: 8px center;
+}
+
+.ta-msg {
+	background-position: 6px 5px;
+}
+
+/* Other */
+
+.credits {
+	margin: 50px 0 5px 0;
+}

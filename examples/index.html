@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	
+<head>
+
+<title>phImage Examples</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/default.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script type="text/javascript" src="js/ph-image.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<script type="text/javascript">
+	hljs.initHighlightingOnLoad();
+</script>
+
+</head>
+	
+<body>
+
+<div class="container-fluid">
+	<div id="example_1" class="example">
+		<h2>Example #1:</h2>
+		<p>Single field with default options.</p>
+		<div class="holder">
+			<div class="code">
+				<h5>HTML:</h5>
+				<pre>
+<code class="html">
+&lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;tb-name&quot; placeholder=&quot;Name&quot; data-ph-image=&quot;images/person.png&quot;&gt;
+
+</code>
+				</pre>
+				<h5>JavaScript:</h5>
+				<pre>
+<code class="javascript">
+$(document).ready(function() {
+	$('input.tb-name').phImage();
+});
+
+</code>
+				</pre>
+			</div>
+			<div class="result">
+				<h5>Result:</h5>
+				<div class="fields">
+					<input type="text" name="name" class="tb-name" placeholder="Name" data-ph-image="images/person.png">
+				</div>
+				<p class="explain">Note: The <em>background-position</em> CSS property has been set within the CSS for this field.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Example Ends -->
+	<div id="example_2" class="example">
+		<h2>Example #2:</h2>
+		<p>Multiple fields with default options, images include text.</p>
+		<div class="holder">
+			<div class="code">
+				<h5>HTML:</h5>
+				<pre>
+<code class="html">
+&lt;div class=&quot;fields&quot;&gt;
+	&lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;tb-name&quot; placeholder=&quot;Name&quot; data-ph-image=&quot;images/person-text.png&quot;&gt;
+	&lt;input type=&quot;email&quot; name=&quot;email&quot; class=&quot;tb-email&quot; placeholder=&quot;Email&quot; data-ph-image=&quot;images/mail-text.png&quot;&gt;
+	&lt;input type=&quot;text&quot; name=&quot;phone&quot; class=&quot;tb-phone&quot; placeholder=&quot;Phone&quot; data-ph-image=&quot;images/phone-text.png&quot;&gt;
+	&lt;textarea name=&quot;msg&quot; class=&quot;ta-msg&quot; placeholder=&quot;Message&quot; data-ph-image=&quot;images/pencil-text.png&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+</code>
+				</pre>
+				<h5>JavaScript:</h5>
+				<pre>
+<code class="javascript">
+$('.fields input, .fields textarea').phImage();
+
+</code>
+				</pre>
+			</div>
+			<div class="result">
+				<h5>Result:</h5>
+				<div class="fields">
+					<input type="text" name="name" class="tb-name" placeholder="Name" data-ph-image="images/person-text.png">
+					<input type="email" name="email" class="tb-email" placeholder="Email" data-ph-image="images/mail-text.png">
+					<input type="text" name="phone" class="tb-phone" placeholder="Phone" data-ph-image="images/phone-text.png">
+					<textarea name="msg" class="ta-msg" placeholder="Message" data-ph-image="images/pencil-text.png"></textarea>
+				</div>
+				<p class="explain">Note: The <em>background-position</em> CSS property has been set within the CSS for these fields.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Example Ends -->
+	
+	<div id="example_3" class="example">
+		<h2>Example #3:</h2>
+		<p>Multiple fields whilst keeping placeholder text and passing options in, images don't contain the text. Note that this functionality can be accomplished with plain CSS as well.</p>
+		<div class="holder">
+			<div class="code">
+				<h5>HTML:</h5>
+				<pre>
+<code class="html">
+&lt;div class=&quot;fields&quot;&gt;
+	&lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;tb-name&quot; placeholder=&quot;Name&quot; data-ph-image=&quot;images/person.png&quot;&gt;
+	&lt;input type=&quot;email&quot; name=&quot;email&quot; class=&quot;tb-email&quot; placeholder=&quot;Email&quot; data-ph-image=&quot;images/mail.png&quot;&gt;
+	&lt;input type=&quot;text&quot; name=&quot;phone&quot; class=&quot;tb-phone&quot; placeholder=&quot;Phone&quot; data-ph-image=&quot;images/phone.png&quot;&gt;
+	&lt;textarea name=&quot;msg&quot; class=&quot;ta-msg&quot; placeholder=&quot;Message&quot; data-ph-image=&quot;images/pencil.png&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+</code>
+				</pre>
+				<h5>JavaScript:</h5>
+				<pre>
+<code class="javascript">
+$('.fields input, .fields textarea').phImage({
+	remove_current: false,
+	padding: '0 0 0 40px'
+});
+
+</code>
+				</pre>
+			</div>
+			<div class="result">
+				<h5>Result:</h5>
+				<div class="fields">
+					<input type="text" name="name" class="tb-name" placeholder="Name" data-ph-image="images/person.png">
+					<input type="email" name="email" class="tb-email" placeholder="Email" data-ph-image="images/mail.png">
+					<input type="text" name="phone" class="tb-phone" placeholder="Phone" data-ph-image="images/phone.png">
+					<textarea name="msg" class="ta-msg" placeholder="Message" data-ph-image="images/pencil.png"></textarea>
+				</div>
+				<p class="explain">Note: The <em>background-position</em> CSS property has been set within the CSS for these fields.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Example Ends -->	
+	
+	<div class="credits">
+		Icons made by <a href="http://www.simpleicon.com" title="SimpleIcon">SimpleIcon</a> from
+		<a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> and are licensed under
+		<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>.
+	</div>	
+	
+</div>
+	
+</body>
+</html>
