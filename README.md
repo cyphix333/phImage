@@ -28,7 +28,7 @@ Documentation can be found within the files you downloaded or at: https://github
 	<script src="path/to/ph-image.min.js"></script>
 	```
 
-3. Modify your html elements you want to apply a placeholder image to with a "data-ph-image" attribute, ie;
+3. Modify your html elements you want to apply a placeholder image to with a `data-ph-image` attribute, ie;
 
 	```html
 	<input type="text" name="name" class="tb" placeholder="Name" data-ph-image="images/icon-person.png">
@@ -94,6 +94,40 @@ The background repeat setting for the image.
 default: 'no-repeat'
 options: Any valid background repeat value for the "background-repeat" css property.
 ```
+
+##
+## FAQ
+##
+
+### What does this plugin actually do?
+
+If you familiar with the HTML5 `placeholder` attribute, then imagine you wanted to use that technique, but instead of using text, you wanted to use an image instead.
+That's what this plugin does; it has basically the same behaviour as placeholder text but with using an image instead.
+
+### Can you use an image AND placeholder text together?
+
+Yes! Whilst this technique can be accomplished with plain CSS I decided to include the option in the plugin for completeness. To achieve this effect, just set the
+`remove_current` option to `false`; note though, that if you set the padding via the options you may encounter some padding issues in IE8 - 10; to avoid these issues
+always set the padding yourself in your CSS.
+
+### What if the user has JavaScript disabled? Does the script degrade gracefully?
+
+Yes. If the user doesn't have JavaScript enabled the script will degrade gracefully and will show the placeholder text instead of the image; that is why you should always
+set the placeholder text even when using this script.
+
+### Do I have to find this to every element separately that I want to use a different image on?
+
+No! Because you specify the image itself via a data attribute you can apply it to as many elements as you want with the selector; the only thing the elements will share
+will be the same options you set, but the images will all be based off of what you set in the data tag within the element itself.
+
+### Does it work with other placeholder plugins?
+
+If you are using a global placeholder plugin in your site and have the option `remove_current` for phImage set to `true` (the default setting) just make sure to put
+the phImage code **BEFORE** the other placeholder script code. This is because if the field that you have applied phImage to has a current text placeholder, phImage will
+remove this value before the other placeholder script gets to it.
+
+If you have the option `remove_current` for phImage set to `false` then it doesn't matter where you place the code in relation to your other placeholder plugin; but it's
+always your best bet to place it **BEFORE** the other placeholder script code in-case you change the options for phImage.
 
 ##
 ## Known Issues
