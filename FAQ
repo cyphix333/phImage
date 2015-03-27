@@ -1,6 +1,6 @@
 * What does this plugin actually do?
 
-If you familiar with the HTML5 "placeholder" attribute, then imagine you wanted to use that technique, but instead of using text, you wanted to use an image instead.
+If you're familiar with the HTML5 "placeholder" attribute, then imagine you wanted to use that technique, but instead of using text, you wanted to use an image instead.
 That's what this plugin does; it has basically the same behaviour as placeholder text but with using an image instead.
 
 * Can you use an image AND placeholder text together?
