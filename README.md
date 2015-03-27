@@ -115,8 +115,8 @@ set the placeholder text even when using this script.
 
 ### Do I have to bind this to every element separately that I want to use a different image on?
 
-No! Because you specify the image itself via a data attribute you can apply it to as many elements as you want with the selector; the only thing the elements will share
-will be the same options you set, but the images will all be based off of what you set in the data tag within the element itself.
+No! Because you specify the image itself via a `data` attribute you can apply it to as many elements as you want with the selector; the only thing the elements will share
+will be the same options you set, but the images will all be based off of what you set in the `data` attribute within the element itself.
 
 ### Does it work with other placeholder plugins?
 
