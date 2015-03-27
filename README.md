@@ -10,8 +10,6 @@
 
 **Author:** Brett Marks (ai3 [at] internode.net.au)
 
-Documentation can be found within the files you downloaded or at: https://github.com/cyphix333/phImage
-
 ##
 ## How to use:
 ##
