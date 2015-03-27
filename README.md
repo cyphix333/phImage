@@ -113,7 +113,7 @@ always set the padding yourself in your CSS.
 Yes. If the user doesn't have JavaScript enabled the script will degrade gracefully and will show the placeholder text instead of the image; that is why you should always
 set the placeholder text even when using this script.
 
-### Do I have to find this to every element separately that I want to use a different image on?
+### Do I have to bind this to every element separately that I want to use a different image on?
 
 No! Because you specify the image itself via a data attribute you can apply it to as many elements as you want with the selector; the only thing the elements will share
 will be the same options you set, but the images will all be based off of what you set in the data tag within the element itself.
@@ -121,11 +121,11 @@ will be the same options you set, but the images will all be based off of what y
 ### Does it work with other placeholder plugins?
 
 If you are using a global placeholder plugin in your site and have the option `remove_current` for phImage set to `true` (the default setting) just make sure to put
-the phImage code **BEFORE** the other placeholder script code. This is because if the field that you have applied phImage to has a current text placeholder, phImage will
+the phImage code **before** the other placeholder script code. This is because if the field that you have applied phImage to has a current text placeholder, phImage will
 remove this value before the other placeholder script gets to it.
 
 If you have the option `remove_current` for phImage set to `false` then it doesn't matter where you place the code in relation to your other placeholder plugin; but it's
-always your best bet to place it **BEFORE** the other placeholder script code in-case you change the options for phImage.
+always your best bet to place it **before** the other placeholder script code in-case you change the options for phImage.
 
 ##
 ## Known Issues
