@@ -1,4 +1,4 @@
-# phImage 1.0 - jQuery Image Placeholder Plugin
+# phImage - jQuery Image Placeholder Plugin
 
 **A simple plugin allowing you to use images for placeholders in text fields & textareas with graceful fallback.**
 
